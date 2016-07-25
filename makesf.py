@@ -64,6 +64,8 @@ def _main():
     print 'Blurring with sigma=%f pix...' % sigma
     result = scipy.signal.convolve(hlist[0].data, blur, 'same')
     print 'done'
+    # Renormalise
+    result = result*maxvalue/result.max()
 
     # Threshold
     print 'Thresholding at %f...' % threshold
