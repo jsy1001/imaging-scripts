@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 
 """Blur and threshold FITS image for use as BSMEM prior model (-sf option).
 
