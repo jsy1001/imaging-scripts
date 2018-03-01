@@ -10,7 +10,7 @@ _release = "rel1.1.1"
 
 import sys
 from math import *
-import pyfits
+import astropy.io.fits as pyfits
 import os.path
 
 def _main():
